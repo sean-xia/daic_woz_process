@@ -28,7 +28,7 @@ else:
     FEATURE_FOLDERS = ['audio_data', EXPERIMENT_DETAILS['FEATURE_EXP']]
 
 DATASET = '/data_warehouse'
-WORKSPACE_MAIN_DIR = '/root/ml/daic/extracted_database_features'
+WORKSPACE_MAIN_DIR = '/root/ml/extracted_database_features'
 WORKSPACE_FILES_DIR = '/root/ml/daic'
 TRAIN_SPLIT_PATH = os.path.join(DATASET, 'train_split_Depression_AVEC2017.csv')
 DEV_SPLIT_PATH = os.path.join(DATASET, 'dev_split_Depression_AVEC2017.csv')
