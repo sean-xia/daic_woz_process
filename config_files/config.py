@@ -27,9 +27,9 @@ if EXPERIMENT_DETAILS['FEATURE_EXP'] == 'text':
 else:
     FEATURE_FOLDERS = ['audio_data', EXPERIMENT_DETAILS['FEATURE_EXP']]
 
-DATASET = '/path/to/DAIC-WOZ'
-WORKSPACE_MAIN_DIR = '/path/for/extracted_database_features'
-WORKSPACE_FILES_DIR = '/path/to/this/code/directory'
+DATASET = '/data_warehouse'
+WORKSPACE_MAIN_DIR = '/root/ml/daic/extracted_database_features'
+WORKSPACE_FILES_DIR = '/root/ml/daic'
 TRAIN_SPLIT_PATH = os.path.join(DATASET, 'train_split_Depression_AVEC2017.csv')
 DEV_SPLIT_PATH = os.path.join(DATASET, 'dev_split_Depression_AVEC2017.csv')
 TEST_SPLIT_PATH_1 = os.path.join(DATASET, 'test_split_Depression_AVEC2017.csv')
