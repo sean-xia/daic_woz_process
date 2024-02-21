@@ -275,8 +275,9 @@ def process_organise_data(main_logger,
         summary = [summary_labels, summary_values]
         pickle.dump(summary, f)
 
-    copyfile(workspace_files_dir + '/' + 'config'+'.py',
-             current_directory + '/' + 'config'+'.py')
+# looks unuseful!
+    # copyfile(workspace_files_dir + '/' + 'config'+'.py',
+    #          current_directory + '/' + 'config'+'.py')
 
 
 def startup():
@@ -286,7 +287,10 @@ def startup():
     """
     features_exp = config.EXPERIMENT_DETAILS['FEATURE_EXP']
     workspace = config.WORKSPACE_MAIN_DIR
-    folder_name = config.FOLDER_NAME
+    # don't work, so change to a specific folder
+    #folder_name = config.FOLDER_NAME
+    folder_name = features_exp
+
     current_directory = os.path.join(workspace, folder_name)
 
     # THIS WILL DELETE EVERYTHING IN THE CURRENT WORKSPACE #

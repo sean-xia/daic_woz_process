@@ -5,7 +5,7 @@ import numpy as np
 # WHOLE_TRAIN: This setting is for mitigating the variable length of the data
 # by zero padding
 # SNV will normalise every file to mean=0 and standard deviation=1
-EXPERIMENT_DETAILS = {'FEATURE_EXP': 'mel',
+EXPERIMENT_DETAILS = {'FEATURE_EXP': 'text',
                       'FREQ_BINS': 40,
                       'DATASET_IS_BACKGROUND': False,
                       'WHOLE_TRAIN': False,
